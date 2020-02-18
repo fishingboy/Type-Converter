@@ -63,12 +63,22 @@ class TypeConvertTest extends TestCase
 
     public function test_convert_to_object_array()
     {
-        $converter = new Type_Converter('{"users":[{"name":"string","age":"integer"}]}');
+        $converter = new Type_Converter(
+            '{
+                "users":[
+                    {
+                        "name":"string",
+                        "height":"float",
+                        "age":"integer",
+                        "adult":"boolean"
+                    }
+                ]
+            }');
         $response = $converter->convert([
             "users" => [
-                ["name" => "leo", "age" => "123"],
-                ["name" => true, "age" => 123.456],
-                ["name" => true, "age" => 123.456],
+                ["name" => "leo", "height" => 173.5, "age" => "12", "adult" => false],
+                ["name" => "rain"],
+                ["name" => 819040, "age" => 14],
             ]
         ]);
         $this->assertIsObject($response);
