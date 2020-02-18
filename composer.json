@@ -1,0 +1,21 @@
+{
+    "name": "fishingboy/type-converter",
+    "description": "convert php value type for api output",
+    "keywords": ["api output", "type convert"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fishingboy",
+            "email": "et282523@hotmail.com"
+        }
+    ],
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "fishingboy\\type_converter\\": "/src"
+        }
+    },
+    "require": {
+        "ext-json": "*"
+    }
+}
