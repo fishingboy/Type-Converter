@@ -27,10 +27,10 @@ $converter = new Type_Converter(
 '{
     "users":[
         {
-            "name":"string",
+            "name":"str",
             "height":"float",
-            "age":"integer",
-            "adult":"boolean"
+            "age":"int",
+            "adult":"bool"
         }
     ]
 }');
