@@ -3,11 +3,16 @@ namespace fishingboy\type_converter;
 
 /**
  * API Output type converter
- * @author Leo.Kuo <fishingboy@gmail.com>
+ * @author Leo.Kuo <et282523@hotmail.com>
  */
 class Type_Converter
 {
     private $format = null;
+
+    const TYPE_INT   = "int";
+    const TYPE_FLOAT = "float";
+    const TYPE_BOOL  = "bool";
+    const TYPE_STR   = "str";
 
     public function __construct($format)
     {
@@ -61,19 +66,19 @@ class Type_Converter
             // 值
             switch ($format) {
                 // 整數
-                case "integer":
+                case self::TYPE_INT:
                     return intval($value);
 
                 // 浮點數
-                case "float":
+                case self::TYPE_FLOAT:
                     return floatval($value);
 
                 // 字串
-                case "string":
+                case self::TYPE_STR:
                     return strval($value);
 
                 // 布林
-                case "boolean":
+                case self::TYPE_BOOL:
                     return boolval($value);
 
                 // 未定義
