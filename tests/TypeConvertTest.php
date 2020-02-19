@@ -5,9 +5,9 @@ use fishingboy\type_converter\Type_Converter;
 
 class TypeConvertTest extends TestCase
 {
-    public function test_convert_to_integer()
+    public function test_convert_to_int()
     {
-        $converter = new Type_Converter('{"a" : "integer"}');
+        $converter = new Type_Converter('{"a" : "int"}');
         $response = $converter->convert(["a" => "123"]);
         $this->assertEquals(123, $response->a);
         $this->assertIsInt($response->a);
@@ -33,9 +33,9 @@ class TypeConvertTest extends TestCase
         $this->assertIsFloat($response->a);
     }
 
-    public function test_convert_to_boolean()
+    public function test_convert_to_bool()
     {
-        $converter = new Type_Converter('{"a" : "boolean"}');
+        $converter = new Type_Converter('{"a" : "bool"}');
         $response = $converter->convert(["a" => "123"]);
         $this->assertTrue($response->a);
         $this->assertIsBool($response->a);
@@ -49,9 +49,9 @@ class TypeConvertTest extends TestCase
         $this->assertIsBool($response->a);
     }
 
-    public function test_convert_to_string()
+    public function test_convert_to_str()
     {
-        $converter = new Type_Converter('{"a" : "string"}');
+        $converter = new Type_Converter('{"a" : "str"}');
         $response = $converter->convert(["a" => 123]);
         $this->assertEquals("123", $response->a);
         $this->assertIsString($response->a);
@@ -67,10 +67,10 @@ class TypeConvertTest extends TestCase
             '{
                 "users":[
                     {
-                        "name":"string",
+                        "name":"str",
                         "height":"float",
-                        "age":"integer",
-                        "adult":"boolean"
+                        "age":"int",
+                        "adult":"bool"
                     }
                 ]
             }');
@@ -92,14 +92,14 @@ class TypeConvertTest extends TestCase
 
     public function test_null_convert_object_array()
     {
-        $converter = new Type_Converter('{"users":[{"name":"string","age":"integer"}]}');
+        $converter = new Type_Converter('{"users":[{"name":"str","age":"int"}]}');
         $response = $converter->convert(null);
         $this->assertNull($response);
     }
 
-    public function test_string_convert_to_object_should_be_fail()
+    public function test_str_convert_to_object_should_be_fail()
     {
-        $converter = new Type_Converter('{"users":[{"name":"string","age":"integer"}]}');
+        $converter = new Type_Converter('{"users":[{"name":"str","age":"int"}]}');
 
         $fail = false;
         try {
