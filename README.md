@@ -1,7 +1,7 @@
 # Type-Converter
 
 ## Introduce
-Because when the app is connected to the api written in php, there are often confusing or flashbacks in the connection because the php data type is not fixed, so I hope to do a type conversion before outputting the api.
+Because when the app (Android and iOS) is connected to the api written in php, there are often confusing or flashbacks in the connection because the php data type is not fixed, so I hope to do a type conversion before outputting the api.
 
 ## Installation
 ```
