@@ -85,7 +85,7 @@ class TypeConvertTest extends TestCase
         $this->assertIsString($response->users[0]->name);
         $this->assertIsInt($response->users[0]->age);
         $this->assertIsString($response->users[1]->name);
-        $this->assertIsInt($response->users[1]->age);
+        $this->assertNull($response->users[1]->age);
         $this->assertIsString($response->users[2]->name);
         $this->assertIsInt($response->users[2]->age);
     }
