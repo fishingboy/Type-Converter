@@ -49,7 +49,7 @@ echo json_encode($response);
 ```
 
 ## type
-1. integer
+1. int
 2. float
-3. boolean
-4. string
+3. bool
+4. str
