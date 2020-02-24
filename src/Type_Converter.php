@@ -17,6 +17,10 @@ class Type_Converter
     public function __construct($format)
     {
         $this->format = json_decode($format);
+
+        if ( ! $this->format) {
+            throw new \Exception("json format error !!");
+        }
     }
 
     /**
@@ -83,7 +87,7 @@ class Type_Converter
 
                 // 未定義
                 default:
-                    return $value;
+                    throw new \Exception("Undefined Type");
             }
         }
     }
