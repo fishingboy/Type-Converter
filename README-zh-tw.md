@@ -1,5 +1,9 @@
 # Type-Converter
 
+## 語言
+[en-us](README.md) / 
+[zh-tw](README-zh-tw.md)
+
 ## 介紹
 因為 app 在與 php 撰寫的 api 串接的時候，常常會有因為 php 資料型態不固定，造成串接上的混淆或是閃退，所以希望在輸出 api 之前先做一次型態的轉換。
 

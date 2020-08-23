@@ -1,5 +1,10 @@
 # Type-Converter
 
+## Language
+
+[en-us](README.md) / 
+[zh-tw](README-zh-tw.md)
+
 ## Introduce
 Because when the app (Android and iOS) is connected to the api written in php, there are often confusing or flashbacks in the connection because the php data type is not fixed, so I hope to do a type conversion before outputting the api.
 
