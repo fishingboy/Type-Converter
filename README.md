@@ -2,6 +2,7 @@
 
 [![CI](https://github.com/fishingboy/Type-Converter/actions/workflows/ci.yml/badge.svg)](https://github.com/fishingboy/Type-Converter/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Packagist Version](https://img.shields.io/packagist/v/fishingboy/type-converter.svg)](https://packagist.org/packages/fishingboy/type-converter)
 
 ## Language
 
