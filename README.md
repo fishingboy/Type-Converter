@@ -1,8 +1,9 @@
 # Type-Converter
 
-[![CI](https://github.com/fishingboy/Type-Converter/actions/workflows/ci.yml/badge.svg)](https://github.com/fishingboy/Type-Converter/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Tests](https://github.com/fishingboy/Type-Converter/actions/workflows/ci.yml/badge.svg)](https://github.com/fishingboy/Type-Converter/actions/workflows/ci.yml)
 [![Packagist Version](https://img.shields.io/packagist/v/fishingboy/type-converter.svg)](https://packagist.org/packages/fishingboy/type-converter)
+[![Downloads](https://img.shields.io/packagist/dt/fishingboy/type-converter.svg?label=Downloads)](https://packagist.org/packages/fishingboy/type-converter)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## Language
 
@@ -56,3 +57,7 @@ echo json_encode($response);
 2. float
 3. bool
 4. str
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
