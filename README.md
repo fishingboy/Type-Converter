@@ -1,5 +1,7 @@
 # Type-Converter
 
+[![CI](https://github.com/fishingboy/Type-Converter/actions/workflows/ci.yml/badge.svg)](https://github.com/fishingboy/Type-Converter/actions/workflows/ci.yml)
+
 ## Language
 
 [en-us](README.md) / 
